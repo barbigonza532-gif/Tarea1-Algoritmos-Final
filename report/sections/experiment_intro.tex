@@ -1,0 +1,17 @@
+Para la realización de los experimentos y el análisis de desempeño de los algoritmos, se utilizó el entorno detallado a continuación:
+
+\begin{itemize}
+    \item \textbf{Hardware:} Procesador AMD Ryzen 5 4500U ($2375$ MHz, 6 núcleos físicos y lógicos) con $8,00$ GB de memoria RAM física instalada.
+    \item \textbf{Software:} Sistema operativo Microsoft Windows 11 Home Single Language. Las implementaciones en C++ fueron compiladas con \texttt{g++} (MinGW-W64) versión $12.2.0$.
+    \item \textbf{Análisis de Datos:} Se utilizó el lenguaje Python versión $3.9.7$ (distribución Anaconda) junto con las librerías \texttt{pandas} y \texttt{matplotlib} para el procesamiento de métricas y generación de gráficos.
+\end{itemize}
+
+\subsection{Datasets y Metodología}
+Los datos utilizados para las pruebas corresponden a los casos definidos en el enunciado de la tarea:
+
+\begin{itemize}
+    \item \textbf{Ordenamiento:} Arreglos de números enteros generados aleatoriamente con tamaños $N \in \{10^1, 10^3, 10^5, 10^7\}$.
+    \item \textbf{Matrices:} Matrices cuadradas de dimensiones $N \times N$, con $N \in \{2^4, 2^6, 2^8, 2^{10}\}$.
+\end{itemize}
+
+Las mediciones brutas se almacenan en la carpeta \texttt{data/measurements/}. Cada archivo de resultados sigue una estructura de tres columnas: la primera representa la dimensión del problema ($N$), la segunda el tiempo de ejecución (segundos) y la tercera la memoria RAM ocupada (KB).

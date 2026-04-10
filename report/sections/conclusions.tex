@@ -1,0 +1,4 @@
+\begin{mdframed}
+    El análisis experimental permitió validar la relación entre la teoría asintótica y el desempeño real del hardware. En el ámbito de ordenamiento, se observó que QuickSort es altamente sensible a la distribución de los datos, degradándose a una complejidad cuadrática para $N=10^7$, mientras que MergeSort y std::sort mantuvieron la estabilidad esperada de la clase $O(n \log n)$. 
+    Respecto a la multiplicación de matrices, el método Naive resultó ser más eficiente que Strassen tanto en tiempo como en memoria para dimensiones de hasta $1024 \times 1024$. Esto demuestra que el elevado overhead recursivo y la gestión de memoria dinámica de Strassen superan su beneficio teórico en el rango evaluado, confirmando la importancia de considerar las constantes multiplicativas y el uso de recursos físicos al seleccionar un algoritmo en la práctica de la ingeniería.
+\end{mdframed}

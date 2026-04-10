@@ -1,0 +1,40 @@
+\subsection{Análisis de Algoritmos de Ordenamiento}
+
+En el siguiente gráfico se observa que para $N=10^7$, QuickSort se comporta como un algoritmo cuadrático $O(n^2)$. Esto confirma que la elección del pivote llevaron al algoritmo a su peor caso teórico, lo cual es impactante, ya que, hasta $N=10^3$, QuickSort es incluso más rápido que MergeSort.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imágenes/time_comparison_log.png}
+    \caption{Comparación de complejidad temporal: Tiempo vs Tamaño}
+    \label{fig:tiempo_sorting}
+    
+\end{figure}
+Por otro lado, tenemos el gráfico que compara el tamaño del arreglo con la memoria utilizada por cada algoritmo. Podemos notar que QuickSort es un algoritmo que trabaja como in-place, ya que, su consumo de memoria crece muy poco. Mientras que stdsort, siendo el más veloz, resulta ser el más costoso en términos de memoria RAM 
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imágenes/memory_comparison_sorting.png}
+    \caption{Comparación de complejidad espacial: Memoria vs Tamaño}
+    \label{fig:tiempo_sorting}
+\end{figure}
+
+\subsection{Análisis de Multiplicación de Matrices}
+
+A continuación se presenta el gráfico de tiempo vs tamaño de los algoritmos de multiplicaion de matrices. El análisis muestra que el método Naive presenta un mejor desempeño temporal que Strassen para todas las dimensiones utilizadas en el experimento. Esto se atribuye al elevado de la recursión y la gestión de memoria en Strassen, sugiriendo que el beneficio de su menor complejidad asintótica ($O(n^{2.81})$) solo es apreciable en dimensiones significativamente mayores a las evaluadas.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imágenes/time_comparison_matrix.png}
+    \caption{Comparación temporal: multiplicación matrices.}
+    \label{fig:tiempo_sorting}
+\end{figure}
+
+
+Por último, se presenta el gráfico que contiene el análisis de consumo de memoria de cada algoritmo de multiplicación de matrices. En términos de complejidad espacial, el experimento revela que el algoritmo de Strassen tiene un gasto de memoria muy superior al método Naive, alcanzando un pico de aproximadamente $55,000$ KB para matrices de $1024 \times 1024$. Este comportamiento es consistente con la naturaleza recursiva del algoritmo, representando un compromiso desfavorable del consumo real de recursos del sistema."
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{imágenes/memory_comparison_matrix.png}
+    \caption{Consumo de memoria: Multiplicación de matrices}
+    \label{fig:tiempo_sorting}
+    
+\end{figure}
